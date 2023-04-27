@@ -1,14 +1,29 @@
-const observer= new IntersectionObserver((entries)=>{
-    entries.forEach((entry=>{
-        console.log(entry);
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        }else{
-            entry.target.classList.remove('show');
-        }
-    })
-    );
+anime({
+    targets:'#item1',
+    keyframes:[
+        {translateX:-100},{translateX:100},{translateX:-100}
+    ],
+    opacity:1,
+    easing:'easeInOutExpo',
+    duration:2000,
+    direction:'alternate',
+    loop:true
+})
+anime({
+    targets:'#item2',
+    //translateX:100,
+    keyframes:[
+        {translateX:100},{translateX:-100},{translateX:100}
+    ],
+    easing:'easeInOutExpo',
+    duration:2000,
+    direction:'alternate',
+    loop:true
 });
-
-const hiddenElements=document.querySelectorAll('.hidden');
-hiddenElements.forEach((el)=> observer.observe(el))
+anime({
+    targets:'.turnTable',
+    duration:20000,
+    easing:'linear',
+    translateX:3450,
+    loop:true
+});
