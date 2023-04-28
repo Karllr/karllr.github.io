@@ -2,6 +2,7 @@
     font-family: 'Poppins';
     margin:0px;
     padding:0px;
+    overflow-x:hidden;
 }
 body{
     overflow-x: hidden;
