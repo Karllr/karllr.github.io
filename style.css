@@ -70,7 +70,6 @@ section:nth-child(5){
     background-color: white;
     padding:5px;
     box-shadow: 5px 5px 5px rgb(212, 211, 211);
-    height:fit-content;
 }
 #item1{
     opacity: 1;
