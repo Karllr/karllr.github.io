@@ -1,152 +1,91 @@
 *{
-    font-family: 'Poppins';
     margin:0px;
     padding:0px;
-    overflow-x:hidden;
-}
-body{
+    font-family: 'Montserrat';
     overflow-x: hidden;
+    text-align: center;
+    word-wrap: break-word;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(255,255,255);
+    padding:20px;
+    width: 70vw;
+    display: flex;
+    gap:10px;
+    box-shadow: 0px 0px 200px rgba(20, 20, 20);
+    margin-top: 2vh;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    position: fixed;
+    left:15vw;
+    mix-blend-mode:difference;
+}
+header h1{
+    mix-blend-mode: difference;
+    color:white;
+}
+header a{
+    text-decoration: none;
+    color:black;
 }
 section{
     width:100vw;
-    height:100vh;
-    display:flex;
-    align-items: center;
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color:white;
-    transform: translateX(0%);
-}
-section div{
-    display:inherit;
-    flex-direction: row;
-}
-section div div{
-    display:inherit;
+    align-items: center;
     flex-direction: column;
 }
-section:nth-child(1){
-    background-color: rgb(0, 5, 31);
-    font-size: 3em;
+section:nth-child(even){
+    background-color: rgb(30,30,30);
 }
-section:nth-child(2){
-    background: rgb(0,122,59);
-    height:calc(100vh+100);
-    font-size: 2em;
-    text-align: left;
+section h1,section p{
+    color:black;
+    mix-blend-mode: add;
 }
 
-section:nth-child(3){
-    background:rgb(0,128,128);
+section div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5em;
+    width:50vw;
+    height:50vh;
+    overflow: visible;
+    background:linear-gradient(45deg, rgb(255, 106, 106), rgb(255, 166, 106));
+}
+section div:nth-child(1) div{
+    border-radius: inherit;
+    width:37.5%;
+    height:75%;
+    background-color: white;
+    position: relative;
+    top:20%;
+    left:25%;
+}
+h1{
     font-size: 2em;
-    height: fit-content;
+}
+p{
+    font-size: 1.5em;
 }
 section:nth-child(4){
-    color:black;
-    font-size: 2em;
-    opacity: 1;
+    background:linear-gradient(120deg,rgb(32 103 159),rgb(28 137 129));
+    height: fit-content;
 }
-section:nth-child(5){
-    position: absolute;
-    top:0px;
-    position:fixed;
-    background-color: black;
-    opacity: 0.1;
-    z-index:-1;
-}
-.turnTable{
-    gap:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
-    transition:250ms opacity ease-out;
-}
-.turnTable:hover{
-    opacity: 1;
-}
-.turnTable div{
+section div:nth-child(2){
+    width:75vw;
+    height:fit-content;
     background-color: white;
-    padding:5px;
-    box-shadow: 5px 5px 5px rgb(212, 211, 211);
+    border:solid whitesmoke 10px;
+    border-radius: 25px;
 }
-#item1{
-    opacity: 1;
+a{
+    text-decoration: none;
 }
-#item2{
-    opacity: 1;
-    transform: translateX(-100);
-}
-img{
-    width:400px;
-    height:auto;
-}
-.custom-shape-divider-top-1682637766 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1682637766 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 63px;
-}
-
-.custom-shape-divider-top-1682637766 .shape-fill {
-    fill: #00051F;
-}
-.custom-shape-divider-bottom-1682637914 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1682637914 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 204px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1682637914 .shape-fill {
-    fill: rgb(0,128,128);;
-}
-.custom-shape-divider-bottom-1682638975 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1682638975 svg {
-    position: relative;
-    display: block;
-    width: calc(132% + 1.3px);
-    height: 96px;
-}
-
-.custom-shape-divider-bottom-1682638975 .shape-fill {
-    fill: #FFFFFF;
-}
-footer{
-    display:flex;
-    background-color:rgb(0,128,128);
+#team h1{
     color:white;
-    gap:1em;
-    align-items: center;
-    justify-content: center;
 }
