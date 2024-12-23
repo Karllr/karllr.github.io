@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Karllr</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/less" ></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.plus-names.js"
+        integrity="sha512-yn7sulUNeq9tX1NbaYmbs480YKctCH/obJgCADtR+X7ZAovAubPjd1wcnhebY9Tx5U4S16aOAhmqv2mv3IUWOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"
+        integrity="sha512-xq+0+dRhI6SZOh+lDnMJEju2p2YPINflJLcYrRAsIMaXnJi6/V3lppCMCYsB2MLeF2E93r+fVo0MioY90pNzpw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-jquery-transform/2.0.0/transform.js"
+        integrity="sha512-uiZweypvichISjVUC5wiGpSLXrxVQIenHK6TczPY5hIFo10FxF33oSdG+JhC9+lE9Nnx61G13xGBxnWXOPOWjA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div>
-        <header>
-            <a href="#top">
-            <h1>Top</h1>
-        </a>
-        <a href="#about">
-            <h1>About</h1>
-        </a>
-        <a href="#projects">
-            <h1>Projects</h1>
-        </a>
-        <a href="#future">
-            <h1>A Future</h1>
-        </a>
-        <a href="#team">
-            <h1>His Team</h1>
-        </a>
-        </header>
-        <section id="top">
+    <section style="left:0vw;transform:none;">
+        <h1 class="emphasized-heading" style="font-size: 7em;letter-spacing: 300px;" id="intro-heading">/JAIDE/</h1>
+        <p>A music artist</p>
+    </section>
+    <section style="left:100vw;transform:none;">
+        <h1 class="emphasized-heading" style="font-size: 4em;">Basic Info</h1>
+        <div style="display:inherit;flex-direction: row;">
             <div>
-                <h1>Ahh, this works now</h1>
-                <div></div>
+                <ul>
+                    <li>I'm Karl</li>
+                    <li>I'm 15 years old</li>
+                    <li>I'm a computer programmer and music producer(Jaide)</li>
+                    <li>I used to go by Karllr a lot, then I changed it to Jadie, now it's Jaide!</li>
+                </ul>
             </div>
-        </section>`
-        <section id="about">
-            <h1>About</h1>
-            <p>Karllr is some 13-year old programmer that codes games and tools mainly in p5.js. He plans to use other languages in the future, but he stays in p5.js for now.</p>
-        </section>
-        <section id="projects">
-            <h1>Projects</h1>
+            <div></div>
+        </div>
+    </section>
+    <section style="left:200vw;transform:none;">
+        <h1 class="emphasized-heading" style="font-size: 4em;">My Works!</h1>
+        <div style="display: flex;flex-direction: row; align-items: center;justify-content: center;gap:50px;">
+            <div id="songs">
+                <h2 class="emphasized-heading">Songs</h2>
+                <div style="overflow-y: scroll;height:50vh">
+                    <a href="https://open.spotify.com/album/0XQ6Q2wbjgzNsAvUTMqc4y">
+                        <div class="song">
+                            <img src="/Assets/cheerful.png" alt="">
+                            <p>Cheerful</p>
+                        </div>
+                    </a>
+                    <div class="song">
+                        <img src="/Assets/Visions.png" alt="">
+                        <p>Visions</p>
+                    </div>
+                    <div class="song">
+                        <img src="/Assets/Melancholy.png" alt="">
+                        <p>Melancholy</p>
+                    </div>
+                </div>
+            </div>
             <div>
-                <p>
-                    My latest game is called <a href="https://karllr.github.io/Aura">Aura</a>, which is really based on auras.<br>
-                    Other games I have are called <a href="https://karllr.github.io/Iso">Iso</a>(New Perspective),<a href="https://karllr.github.io/C">C</a>(The Ocean), <a href="karllr.github.io/Flashbacks">Flashbacks</a>(Theming), <a href="https://karllr.github.io/hemi">Hemi</a>(Design), and <a href="karllr.github.io/friends-are-needed">Friends-are-needed</a>(It was a test)<br>
-                    My first game was <a href="https://karllr.github.io/layers-on-layers">Layers on Layers</a>(A good idea, terrible design) 
-                </p>
+                <h2 class="emphasized-heading">Games</h2>
+                <p>I'll post them soon. But first I need to fix up this faulty HTML</p>
             </div>
-        </section>
-        <section id="future">
-            <h1>A future</h1>
-            <p>Karllr is slowing down in his speed a little, so by the end of 2023, he will have about 13 made in total. He will have a design that no one might be able to copy, and is so heavy, yet causes little lag. His games will contain much more effort, and it might take a month or two to create a game or tool.<br><br> You can just <em>wonder</em> what Karllr might do in 2024</p>
-        </section>
-        <section id="team">
-            <h1>The team</h1>
-            <div>
-                
-                <p>Karllr:He is the main coder/programmer of the group. He mainly codes in p5js, but Egg may teach him so new languages. He's unsure at the time if he wants to learn pur js or not.
-                </p><p>Juanster:The main designer of the games here. He doesn't code much, he just draws out ideas. However, with all the design skills he has, he still uses powerpoint design ideas.</p>
-                <p>Chinchilla: Playtester. He makes sure the games are easy enough, so Karllr can publish them. The reason is because the programmer is always too good at his own game. The same lies on Karllr, he's too good at his games. He rarely helps, because Karllr takes too long to make mechanics. Karllr is sorry for his actions, and will try better in the future.</p>
-                <p>Egg: Hmmm... does he taste like it? Anyway, he does the ideas, css, and music, if Karllr doesnt use creo. Unfortunately, Karllr used his own css to make the site, so it isnt the greatest. Also, he is the biggest bird of all the team.</p>
-            </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
 </body>
 </html>
