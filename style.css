@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: row;
     width:max-content;
-    height:300vw;
+    height:400vw;
 }
 
 header{
